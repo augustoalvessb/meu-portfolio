@@ -350,6 +350,9 @@ p {
     justify-items: center;
     flex-direction: column;
 }
+#projetos .calculadora {
+    color: var(--cor0);
+}
 #projetos .projetos-item {
     display: flex;
     align-items: center;

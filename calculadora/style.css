@@ -9,7 +9,7 @@
     font-weight: bold;
 }
 body {
-    background-image: linear-gradient(to right, rgba(137, 43, 226, 0.792), rgba(0, 0, 0, 0.9));
+    background-image: linear-gradient(to right,  #0D7BBFca, rgba(0, 0, 0, 0.9));
     background-attachment: fixed;
 }
 .grid-conteiner {
@@ -34,7 +34,7 @@ body {
     color: black;
 }
 .grid-conteiner > .operator {
-    background: blueviolet;
+    background:  #0D7BBF;
 }
 .span-two {
     grid-column: span 2;
