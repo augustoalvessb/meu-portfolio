@@ -1,0 +1,58 @@
+:root {
+    --font: 'Roboto', Arial, Helvetica, sans-serif;
+    --cor0: #0D7BBF;
+    --cor1: #6A8FA6;
+    --cor2: #D0E5F2;
+    --cor3: #730E0E;
+    --cor4: #D9CEC7;
+    --cor5: orange;
+}
+body {
+    background-image: linear-gradient(45deg, var(--cor5), var(--cor2));
+}
+#fireCanvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+table {
+    border-collapse: collapse;
+    border: 2px solid #000;
+}
+td {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;
+    text-align: center;
+    vertical-align: center;
+    font-family: monospace;
+    font-size: 18px;
+    position: relative;
+}
+.pixel-index {
+    font-size: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    color: #999;
+}
+td.pixel {
+    width: 4px;
+    height:  4px;
+    border: 0;
+}
+.voltar {
+    font-family: var(--font);
+    font-weight: 600;
+    color: orange;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.334);
+    background-color: var(--cor4);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.515);
+    text-decoration: none;
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    padding: 10px;
+}

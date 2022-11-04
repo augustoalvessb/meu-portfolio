@@ -12,6 +12,18 @@ body {
     background-image: linear-gradient(to right,  #0D7BBFca, rgba(0, 0, 0, 0.9));
     background-attachment: fixed;
 }
+.voltar {
+    font-family: var(--font);
+    font-weight: 600;
+    color: #0D7BBF;
+    background-color: black;
+    box-shadow: 2px 2px 6px #8e9497;
+    text-decoration: none;
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    padding: 10px;
+}
 .grid-conteiner {
     display: grid;
     justify-content: center;

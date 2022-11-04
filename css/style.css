@@ -353,6 +353,9 @@ p {
 #projetos .calculadora {
     color: var(--cor0);
 }
+#projetos .fire {
+    color: orange;
+}
 #projetos .projetos-item {
     display: flex;
     align-items: center;
