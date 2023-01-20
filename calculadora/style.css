@@ -23,6 +23,7 @@ body {
     left: 20px;
     top: 50px;
     padding: 10px;
+    border-radius: 10px;
 }
 .grid-conteiner {
     display: grid;

@@ -83,7 +83,9 @@ p {
 .nome h1 span {
     color: var(--cor3);
 }
-
+.first, .second, .third, .fourth {
+    cursor: pointer;
+}
 /* header */
 #header {
     position: fixed;
@@ -354,7 +356,13 @@ p {
     color: var(--cor0);
 }
 #projetos .fire {
-    color: orange;
+    color: #ffa500;
+}
+#projetos .cdl {
+    color: #FA5F07;
+}
+#projetos .tmb {
+    color: #0ea8a8;
 }
 #projetos .projetos-item {
     display: flex;
@@ -487,6 +495,9 @@ p {
     width: 70px;
     margin: 0 auto;
     margin-bottom: 10px;
+}
+#contato .contact {
+    cursor: pointer;
 }
 #contato .contato-info h1 {
     font-size: 2.5em;

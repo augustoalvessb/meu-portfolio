@@ -1,0 +1,866 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --cor1: #B54807;
+    --cor2: #08ACB0;
+    --cor3: #091514;
+    --cor4: #299B84;
+    --cor5: #FA5F07;
+    --cor6: #F28C48;
+    --cor7: #291e12cc;
+    --cor8: #15211929;
+    
+    --btn1: #259881;
+    --btn2: #77D1BF;
+
+    --corI: #299b843a;
+    --corII: #f28c484f;
+    --corIII:#f28c4858;
+
+    --corIV: #FB0000;
+
+    --mont: 'Montserrat', Arial, Helvetica, sans-serif;
+    --dmsn: 'DM Sans', Arial, Helvetica, sans-serif;
+    --robo: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--cor3);
+    color: white;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.max-width {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+}
+.conteiner {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gradient {
+    font-family: var(--mont);
+    text-transform: uppercase;
+    background-image: linear-gradient(45deg, var(--cor4), var(--cor6));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn a {
+    animation: button 3s ease-in-out 1s infinite alternate-reverse;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    flex-direction: row;
+    background-image: linear-gradient(to top, var(--cor5), var(--cor6));
+    padding: 18px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 7px;
+    margin: 20px 10px 40px;
+    box-shadow: 0px 0px 20px var(--cor6);
+}
+.btn-2 a {
+    background-image: linear-gradient(to top, var(--btn1), var(--btn2));
+    box-shadow: 0px 0px 20px var(--cor4);
+}
+.btn p {
+    font-family: var(--mont);
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #091514;
+}
+.icones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 83vw;
+    font-family: var(--dmsn);
+    line-height: 24px;
+    text-align: center;
+    font-size: 15px;
+}
+.bordas {
+    display: flex;
+    align-items: center;
+    flex-basis: 80%;
+    max-width: 700px;
+    width: 90%;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(45deg, var(--corI), var(--corII));
+    border: 3px solid var(--cor6);
+    border-radius: 15px;
+    padding: 40px;
+    margin: 30px 0;
+}
+.icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+#zap {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    right: 10px;
+    bottom: 15px;
+    z-index: 99;
+}
+.voltar {
+    font-family: var(--robo);
+    font-weight: 600;
+    color: var(--cor3);
+    background-color: var(--cor1);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.515);
+    text-decoration: none;
+    position: fixed;
+    border-radius: 10px;
+    left: 20px;
+    top: 50px;
+    padding: 10px;
+    z-index: 99;
+}
+/* section início */
+#início .início {
+    background: url(../img/background-hero-1.jpg) no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    min-height: 81vh;
+}
+
+#início .img-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 80%;
+    text-align: center;
+    margin-top: 5px;
+}
+#início .img {
+    margin-top: 20px;
+    max-width: 80%;
+}
+#início .texto p {
+    font-family: var(--robo);
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+}
+#início .img-2 img {
+    margin-top: 30px;
+}
+/* fim section início */
+
+/* section alunos */
+#alunos .alunos {
+    background-image: linear-gradient(45deg, var(--cor4), var(--cor5));
+    flex-direction: column;
+    text-align: center;
+}
+#alunos .img-texto {
+    font-family: var(--mont);
+}
+#alunos .texto {
+    margin: 40px 5px;
+}
+#alunos .alunos-img {
+    margin: 5% auto;
+    width: 80%;
+}
+/* fim section alunos */
+
+/* section conexão*/
+#conexão .conexão {
+    flex-direction: column;
+    background-image: linear-gradient(to right, var(--cor8), var(--cor3) 60%, var(--cor7));
+    font-family: var(--dmsn);
+    line-height: 24px;
+    text-align: center;
+    font-size: 15px;
+}
+#conexão .titulo {
+    margin: 50px 15px 20px;
+}
+#conexão .conexão-img-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 80%;
+    margin-bottom: 50px;
+}
+#conexão .conexão-img {
+    margin: 60px 0px 40px;
+}
+#conexão .conexão-texto > p {
+    margin: 10px 0;
+}
+#conexão .img-2 {
+    margin: 10px 0;
+}
+/* fim section conexão*/
+
+/* section método */
+#método .método {
+    flex-direction: column;
+    min-height: min-content;
+    justify-content: start;
+    background-image: url(../img/background-hero-1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#método .titulo-texto {
+    max-width: 90%;
+    margin: 50px 0px;
+    text-align: center;
+    font-family: var(--dmsn);
+    font-size: 14px;
+    line-height: 34px;
+}
+#método .titulo-texto > p {
+    margin: 10px 0;
+}
+#método strong {
+    background-color: #091514;
+}
+/* fim section método */
+
+/* section mercado */
+#mercado .mercado {
+    flex-direction: column;
+    background-image: linear-gradient(to right, var(--cor8), var(--cor3) 60%, var(--cor7));
+    text-align: center;
+    padding-bottom: 50px;
+}
+#mercado .mercado-titulo {
+    margin: 60px 0px 40px;
+}
+#mercado .mercado-bordas {
+    padding: 32px 16px ;
+}
+/* fim section mercado */
+
+/* section videos */
+#videos .videos {
+    background-image: linear-gradient(to right, var(--cor4) 40%, var(--cor6));
+    flex-direction: column;
+}
+#videos .videos-titulo {
+    font-family: var(--mont);
+    text-align: center;
+    line-height: 34px;
+    font-size: 20px;
+    margin: 40px 0px 20px;
+}
+#videos .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#videos .video-fora {
+    margin: 5px 0px;
+    width: 100%;
+    height: 100%;
+}
+#videos .video-dentro {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+#videos .video-dentro > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+/* fim section videos */
+
+/* inicio section def */
+#def .def {
+    flex-direction: column;
+    background-image: linear-gradient(to top, var(--cor7), var(--cor3) 70%);
+}
+#def .def-img-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--dmsn);
+    text-align: center;
+    max-width: 90%;
+    line-height: 34px;
+    font-size: 15px;
+    padding: 10px;
+    margin: 40px 0px 5px;
+}
+#def .def-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#def .def-texto > p {
+    margin: 8px 0;
+}
+/* fim section def */
+
+/* section etapas */
+#etapas .etapas {
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, var(--cor7), var(--cor3) 70%);
+    text-align: center;
+    min-height: 90%;
+}
+#etapas .etapas-titulo-img {
+    max-width: 90%;
+    margin-bottom: 30px;
+}
+#etapas .etapas-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px 40px;
+}
+/* fim section etapas */
+
+/* section bonus */
+#bonus .bonus {
+    flex-direction: column;
+    text-align: center;
+}
+#bonus .bonus > h1 {
+    margin: 40px 0;
+}
+#bonus .bonus-squares {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 90%;
+    font-family: var(--dmsn);
+    line-height: 30px;
+    font-size: 15px;
+}
+#bonus .square {
+    padding: 30px 15px;
+}
+#bonus .square > button {
+    background-image: linear-gradient(to bottom, var(--btn1), var(--btn2));
+    font-family: var(--mont);
+    font-weight: 600;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 5px;
+    border: 1px solid var(--cor2);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+#bonus .square > h3 {
+    color: var(--cor6);
+    margin: 10px 0;
+}
+#bonus .square > p {
+    margin: 5px 0;
+}
+/* fim section bonus */
+
+/* section promoção */
+#promoção .promoção {
+    flex-direction: column;
+    background-image: linear-gradient(to left, var(--cor7), var(--cor3));
+    text-transform: uppercase;
+    font-family: var(--mont);
+    text-align: center;
+}
+#promoção .promoção-titulo {
+    margin: 50px 0px 20px;
+}
+#promoção .promoção-bordas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(45deg, var(--cor3), var(--corII));
+    max-width: 90%;
+    border: 2px solid var(--cor6);
+    border-radius: 15px;
+    padding: 30px 15px 0px;
+    margin: 30px 0;
+    font-weight: 800;
+}
+#promoção .promoção-bordas div > h3 {
+    line-height: 28px;
+    font-size: 17px;
+    color: var(--corIV);
+    margin: 20px 0px;
+}
+#promoção .promoção-bordas div > h2 {
+    font-size: 38px;
+    line-height: 38px;
+    color: var(--btn2);
+    margin: 0px 20px;
+    text-shadow: 0px 0px 8px var(--btn1);
+}
+#promoção .promoção-bordas .texto {
+    text-transform: none;
+    font-weight: 400;
+    margin: 20px 0px;
+}
+#promoção .promoção-bordas .btn {
+    margin: -10px 0;
+}
+#promoção .promoção-pagamentos {
+    max-width: 80%;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 40px;
+}
+#promoção .promoção-pagamentos > p {
+    padding: 10px 0px;
+}
+/* fim section promoção */
+
+/* section garantia */
+#garantia .garantia {
+    flex-direction: column;
+    background-image: linear-gradient(to right, var(--corI), var(--cor7) 80%);
+    text-align: center;
+}
+#garantia .garantia-img-texto {
+    display: flex;
+    max-width: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--dmsn);
+    line-height: 34px;
+    margin: 40px 0 20px;
+}
+#garantia .garantia-img-texto div > p {
+    margin: 20px 0;
+}
+#garantia .garantia-img {
+    max-width: 60%;
+}
+/* fim section garantia */
+
+/* section sobre */
+#sobre .sobre {
+    flex-direction: column;
+    background-image: linear-gradient(to right, var(--cor3), var(--cor7));
+    text-align: center;
+    font-family: var(--dmsn);
+    line-height: 34px;
+}
+#sobre .sobre-img-texto {
+    max-width: 90%;
+    margin: 50px 0px 0px;
+}
+#sobre .sobre-img-texto > p {
+    margin: 15px 5px;
+}
+#sobre .sobre-img {
+    margin-bottom: -12px;
+}
+/* fim section sobre */
+
+/* section perguntas */
+#perguntas .perguntas {
+    background-image: linear-gradient(to right, var(--corI), var(--cor7) 80%);
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: var(--dmsn);
+    font-weight: 500;
+    line-height: 28px;
+    min-height: 70vh;
+}
+#perguntas .perguntas-titulo {
+    margin: 50px 0px 30px;
+}
+#perguntas .perguntas-frequentes {
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+}
+#perguntas .perguntas-detalhes {
+    display: flex;
+    justify-content: center;
+    align-items: initial;
+    flex-direction: column;
+    max-width: 80%;
+    text-align: left;
+    margin-bottom: 70px;
+}
+details {
+    border-bottom: 1px solid #d5d4d4;
+    padding-bottom: 15px;
+}
+summary {
+    list-style: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+details > p , li {
+    padding: 5px 0;
+    max-width: 500px;
+    color: #d5d4d4;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+}
+/* fim section perguntas */
+
+/* footer */
+footer {
+    background-image: linear-gradient(to right, var(--corI), var(--cor7) 80%);
+    text-align: center;
+    font-family: var(--dmsn);
+    font-size: 15px;
+    color: #d5d4d4;
+    line-height: 26px;
+    margin-top: 1px;
+    padding: 30px;
+}
+/* fim footer */
+
+@keyframes button {
+    from {
+        transform: translateY(-10px);
+    }  to {
+        transform: translateY(10px);
+    }
+    
+}
+
+@media only screen and (min-width:768px){
+    /* INICIO */
+    #início .texto {
+        margin-top: 20px;
+    }
+    #início .texto > h1 {
+        font-size: 2.5em;
+    }
+    #início .texto > p {
+        font-size: 18px;
+    }
+    /* FIM INICIO */
+
+    /* ALUNOS */
+    #alunos .texto {
+        font-size: 20px;
+    }
+    #alunos .texto > h1 {
+        margin: 20px;
+    }
+    #alunos .alunos-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    #alunos .alunos-img > div {
+        margin: 5px;
+        flex-basis: 31%;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.507);
+    }
+    /* FIM ALUNOS */
+
+    /* CONEXÃO */
+    #conexão .titulo, .conexão-img-texto {
+        font-size: 20px;
+        line-height: 25px;
+        padding: 30px 0;
+    }
+    #conexão .icones {
+        flex-flow: wrap;
+    }
+    #conexão .bordas {
+        margin: 10px;
+        height: 250px;
+        flex-basis: 46.8%;
+    }
+    /* FIM CONEXÃO */
+
+    /* METODO */
+    #método .método {
+        min-height: min-content;
+    }
+    #método .titulo-texto {
+        font-size: 20px;
+        line-height: 38px;
+    }
+    /* FIM METODO */
+
+    /* MERCADO */
+    #mercado .mercado {
+        font-size: 20px;
+    }
+    #mercado .icones {
+        flex-flow: wrap;
+    }
+    #mercado .bordas {
+        height: 300px;
+        flex-basis: 45%;
+        margin: 30px 15px;
+    }
+    /* FIM MERCADO */
+
+    /* DEF */
+    #def .def-img-texto {
+        font-size: 20px;
+        line-height: 38px;
+    }
+    #def .def-texto h1 {
+        padding: 20px 0;
+    } 
+    /* FIM DEF */
+
+    /* ETAPAS */
+    #etapas .etapas {
+        font-size: 20px;
+    }
+    /* FIM ETAPAS */
+
+    /* BONUS */
+    #bonus .bonus {
+        font-size: 20px;
+    }
+    /* FIM BONUS */
+
+    /* PROMOÇÃO */
+    #promoção .promoção {
+        font-size: 20px;
+    }
+    /* FIM PROMOÇÃO */
+    
+    /* GARANTIA */
+    #garantia .garantia {
+        font-size: 20px;
+    }
+    /* FIM GARANTIA */
+
+    /* SOBRE */
+    #sobre .sobre {
+        font-size: 20px;
+    }
+    /* FIM SOBRE */
+
+    /* PERGUNTAS */
+    #perguntas .perguntas {
+        font-size: 20px;
+    }
+    #perguntas details > p {
+        max-width: 600px;
+    }
+    /* FIM PERGUNTAS */
+
+    footer {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+
+    .btn a {
+        height: 60px;
+    }
+    .btn a:hover {
+        scale: 1.2;
+        transition: all .8s ease-in-out;
+    }
+
+    #início .max-width {
+        flex-direction: row;
+    }
+    /* INICIO */
+    #início .início {
+        flex-direction: row;
+        min-height: max-content;
+    }
+    #início .texto {
+        max-width: 600px;
+        text-align: left;
+    }
+    /* FIM INICIO */
+
+    /* CONEXÃO */
+    #conexão .bordas {
+        flex-basis: 22%;
+    }
+    #conexão .conexão-img-texto {
+        flex-direction: row;
+        margin: 50px 0;
+    }
+    #conexão .conexão-img-texto:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    #conexão .conexão-img {
+        margin: 0; 
+    }
+    #conexão .conexão-texto {
+        width: 700px;
+        text-align: left;
+    }
+    /* FIM CONEXÃO */
+
+    /* METODO */
+    #método .titulo-texto {
+        max-width: 685px;
+    }
+    /* FIM METODO */
+
+    /* MERCADO */
+    #mercado .mercado-bordas {
+        flex-basis: 30%;
+    }
+    /* FIM MERCADO */
+
+    /* VIDEOS */
+    #videos .videos {
+        min-height: max-content;
+    }
+    #videos .row {
+        flex-direction: row;
+    }
+    /* FIM VIDEOS */
+
+    /* DEF */
+    #def .def-img-texto {
+        flex-direction: row-reverse;
+    }
+    #def .def-texto {
+        text-align: left;
+        line-height: 25px;
+        width: 700px;
+    }
+    #def .max-width {
+        align-items: flex-start;
+    }
+    #def .btn-2 {
+        margin-top: -50px;
+        margin-left: 70px;
+    }
+    /* FIM DEF */
+
+    /* ETAPAS */
+    #etapas .etapas-img {
+        margin: 50px 0;
+    }
+    /* FIM ETAPAS */
+
+    /* BONUS */
+    #bonus h1 {
+        margin: 50px 0;
+    }
+    #bonus .bonus-squares {
+        display: grid;
+        position: relative;
+        max-width: 1100px;
+        justify-items: center;
+        align-items: stretch;
+        gap: 30px 0px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.6fr 1fr 0.8fr;
+        margin: 40px 0;
+    }
+    #bonus .square {
+        margin: 0;
+        text-align: center;
+    }
+    #bonus .grid-1 {
+        grid-column: 1 / 3;
+        padding: 5px 40px;
+    }
+    #bonus .grid-1, .grid-2 {
+        width: 520px;
+        height: 350px;
+    }
+    #bonus .grid-2 {
+        grid-column: 3 / 5;
+    }
+    #bonus .grid-4 {
+        padding: 10px 20px;
+    }
+    #bonus .grid-5 {
+        padding: 10px 40px;
+    }
+    #bonus .grid-6 {
+        padding: 10px 40px;
+    }
+    #bonus .grid-7 {
+        position: absolute;
+        width: 300px;
+        height: 400px;
+        left: 36%;
+        top: 70%;
+    }
+    /* FIM BONUS */
+
+    /* GARANTIA */
+    #garantia .garantia {
+        min-height: max-content;
+    }
+    #garantia .garantia-img-texto {
+        flex-direction: row;
+        gap: 50px;
+    }
+    #garantia .garantia-img {
+        width: 400px;
+    }
+    #garantia .garantia-texto {
+        text-align: left;
+        max-width: 500px;
+    }
+    /* FIM GARANTIA */
+
+    /* SOBRE */
+    #sobre .sobre {
+        min-height: max-content;
+    }
+    #sobre .sobre-img-texto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 70px;
+    }
+    #sobre .sobre-texto {
+        text-align: left;
+        width: 600px;
+        padding-bottom: 50px;
+    }
+    #sobre .sobre-texto h1, p {
+        margin: 20px 0;
+    }
+    #sobre .sobre-img {
+        width: 500px;
+    }
+    /* FIM SOBRE */
+}
